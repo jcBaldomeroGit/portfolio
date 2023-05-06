@@ -1,0 +1,38 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+.pages{
+    width: 100%; height: 90%;
+    border: 1px solid red;
+    display: flex;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch; /*make it swipe smoothly on WebKit based mobile browsers*/
+    scroll-snap-type: x mandatory; /*each slide snap into place with snap-points.*/
+    scroll-behavior: smooth;
+}
+.page{
+    width: 100%; height: 100%;
+    border: 1px solid black;
+    flex-shrink: 0;
+}
+#page1{
+    background-color: red;
+}
+#page2{
+    background-color: green;
+}
+#page3{
+    background-color: yellow;
+}
+#page4{
+    background-color: blue;
+}
